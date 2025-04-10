@@ -12,8 +12,8 @@ export default function Page() {
               Contactez-moi
             </h2>
             <p className="text-lg text-gray-700 mb-4">
-              Vous pouvez me contacter en remplissant le formulaire à droite ou
-              en utilisant les informations ci-dessous.
+              Vous pouvez me contacter en remplissant le formulaire ou en
+              utilisant les informations ci-dessous.
             </p>
 
             <div className="space-y-4">
