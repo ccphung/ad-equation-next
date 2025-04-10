@@ -13,7 +13,7 @@ function Hero() {
 
             <h2 className="text-center m-2">
               Nous cherchons, vous trouvez... sans effort ! <br /> A vos côtés
-              pour défendre vos intérêts et vous assere le meilleur choix, en
+              pour défendre vos intérêts et vous assurer le meilleur choix, en
               toute sérénité.
             </h2>
             <div className="flex items-end h-50 relative">
