@@ -14,9 +14,7 @@ function Process() {
             desc={
               <>
                 Votre projet immobilier est unique, tout comme vos envies et
-                votre mode de vie. Dès notre premier échange, je prends le temps
-                de vous connaître pour comprendre vos attentes et vous
-                accompagner au mieux. <br />
+                votre mode de vie.
               </>
             }
             size="12"
@@ -26,8 +24,7 @@ function Process() {
             title="Etape 2 : Recherche"
             desc={
               <>
-                Une fois votre dossier validé, je vous présente une sélection
-                ciblée : vous n’avez plus qu’à choisir en toute sérénité. Un
+                Une sélection ciblée pour aider à choisir en toute sérénité. Un
                 véritable gain de temps pour vous !
               </>
             }
@@ -38,13 +35,11 @@ function Process() {
             title="Etape 3 : Conseils"
             desc={
               <>
-                Je vous apporte un conseil objectif et avisé pour vous guider
-                dans votre choix en toute confiance. <br />À chaque étape, je
-                veille à vos intérêts, jusqu’à la relecture du bail, pour vous
-                assurer une installation sereine et sécurisée.
+                Des conseils objectifs et avisés pour vous guider dans votre
+                choix en toute confiance.
               </>
             }
-            size="14"
+            size="12"
           />
         </div>
       </div>

@@ -8,18 +8,12 @@ function WhyDelegate() {
           Pourquoi déléguer ma recherche ?
         </h2>
         <ul className="m-2">
-          <ListItem
-            text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum."
-          />
-          <ListItem
-            text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum."
-          />
-          <ListItem
-            text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum."
-          />
+          <ListItem text="Gagner du temps" />
+          <ListItem text="Sécuriser votre achat immobilier ou location" />
+          <ListItem text="Avoir un expert à vos côtés" />
+          <ListItem text="Avoir un expert à vos côtés" />
+          <ListItem text="Avoir un accès à un plus grand choix de biens" />
+          <ListItem text="Être sûr d'acheter ou louer au juste prix" />
         </ul>
       </div>
     </div>

@@ -1,59 +1,92 @@
+import Image from "next/image";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faTwitter,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
+
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <h4 className="text-lg font-bold mb-4">À propos</h4>
-            <p>
-              Notre entreprise est dédiée à fournir des services de qualité et à
-              satisfaire nos clients.
-            </p>
-          </div>
+    <footer className="bg-indigo-300 text-white py-6 ">
+      <div className="container mx-auto px-4 xl:grid xl:grid-cols-3 flex flex-col gap-4 items-center">
+        <div className="relative rounded-full h-24 w-24 z-[1]">
+          <Image
+            className="rounded-full border-indigo-100 p-2"
+            src="/images/logo/logo.png"
+            alt="adeline"
+            fill
+          />
+        </div>
 
-          <div>
-            <h4 className="text-lg font-bold mb-4">Liens utiles</h4>
-            <ul>
-              <li>
-                <a href="#" className="text-white hover:text-gray-400">
-                  Accueil
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white hover:text-gray-400">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white hover:text-gray-400">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div>
+          <p className="font-bold text-xl mb-2 m-1">Contact</p>
+          <ul className="space-y-1 text-sm">
+            <li>
+              <a
+                href="tel:+33661935898"
+                className="cursor-pointer flex items-center"
+              >
+                <PhoneIcon className="w-5 m-1" /> +33 6 61 93 58 98
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:+351XXXXXXXXX"
+                className="cursor-pointer flex items-center"
+              >
+                <PhoneIcon className="w-5 m-1" /> +351 xx xx xx xx
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:adeline.porto.immo@gmail.com"
+                className="cursor-pointer flex items-center"
+              >
+                <EnvelopeIcon className="w-5 m-1" />
+                adeline.porto.immo@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <div>
-            <h4 className="text-lg font-bold mb-4">Contact</h4>
-            <p>+1 (234) 567-890</p>
-            <p>email@example.com</p>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-bold mb-4">Suivez-nous</h4>
-            <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-gray-400">
-                Facebook
-              </a>
-              <a href="#" className="text-white hover:text-gray-400">
-                Twitter
-              </a>
-              <a href="#" className="text-white hover:text-gray-400">
-                Instagram
-              </a>
-            </div>
+        <div>
+          <p className="font-bold text-xl mb-2 m-1 xl:text-white text-indigo-500">
+            Suivez-nous
+          </p>
+          <div className="flex space-x-4 mt-2">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#E1306C]"
+            >
+              <FontAwesomeIcon icon={faInstagram} className="h-6 w-6" />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#1DA1F2]"
+            >
+              <FontAwesomeIcon icon={faTwitter} className="h-6 w-6" />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#1877F2]"
+            >
+              <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
+            </a>
           </div>
         </div>
       </div>
+
+      <p className="text-center mt-5 text-sm italic">
+        ©Adeline Pereira 2025 - Site réalisé par Cédric Phung
+      </p>
     </footer>
   );
 };

@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 
 function QuetionItem({ question, response }) {
@@ -17,7 +18,9 @@ function QuetionItem({ question, response }) {
         </button>
       </div>
 
-      {showResponse && <p className="text-stone-600 ">{response}</p>}
+      {showResponse && (
+        <p className="text-stone-600 whitespace-pre-line">{response}</p>
+      )}
     </div>
   );
 }

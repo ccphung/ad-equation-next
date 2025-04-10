@@ -1,3 +1,4 @@
+"use client";
 import { useCallback, useEffect, useState } from "react";
 
 export const useDotButton = (emblaApi, onButtonClick) => {
@@ -10,7 +11,7 @@ export const useDotButton = (emblaApi, onButtonClick) => {
       emblaApi.scrollTo(index);
       if (onButtonClick) onButtonClick(emblaApi);
     },
-    [emblaApi, onButtonClick]  
+    [emblaApi, onButtonClick]
   );
 
   const onInit = useCallback((emblaApi) => {

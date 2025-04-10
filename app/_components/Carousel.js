@@ -1,3 +1,5 @@
+"use client";
+
 import useEmblaCarousel from "embla-carousel-react";
 import ClassNames from "embla-carousel-class-names";
 import {
@@ -27,17 +29,37 @@ const Carousel = ({
   } = usePrevNextButtons(emblaApi);
 
   const descriptions = [
-    { profil: "Etudiants", durée: "8 semaines", detail: "Logements étudiants" },
-    { profil: "Salariés", durée: "7 semaines", detail: "Pour les salariés" },
+    {
+      profil: "Etudiants",
+      detail: `Vous êtes (futurs) étudiants à Porto :
+  - en Erasmus pour 6 mois ou 1 an au FEUP (ingénieur), au FAUP (architecture), à la Católica Porto Business School (commerce), ISCAP (économie, finances)
+  - pour toute la durée de vos études en santé (médecine, dentaire, pharmacie, kinésithérapie…) à Fernando Pessoa
+  
+  Et vous recherchez en location :
+  - une chambre en colocation pour limiter les coûts et faire connaissance avec d’autres étudiants locaux ou étrangers
+  - un appartement seul pour étudier dans les meilleures conditions
+  - un appartement avec plusieurs chambres pour faire de la colocation avec vos amis`,
+    },
+    {
+      profil: "Salariés",
+      detail: `Vous êtes salarié(s) et :
+  - avez signé un contrat de travail local pour un changement de vie
+  - avez un contrat de travail français mais souhaitez faire du télétravail à Porto
+  
+  Et vous recherchez en location :
+  - un appartement ou maison près de votre lieu professionnel
+  - un appartement ou maison pour de meilleures conditions de vie pour toute votre famille`,
+    },
     {
       profil: "Investisseurs",
-      durée: "6 semaines",
-      detail: "Pour les investisseurs",
+      detail: `Vous êtes une entreprise et vous recherchez en location :
+  - un appartement ou maison pour votre salarié.e en mission à Porto`,
     },
     {
       profil: "Entreprises",
-      durée: "8 semaines",
-      detail: "Pour les entreprises",
+      detail: `Vous êtes investisseur(s) français et vous recherchez à l’achat :
+  - un pied à terre à Porto
+  - un investissement locatif`,
     },
   ];
 
@@ -54,17 +76,11 @@ const Carousel = ({
               />
               <div className="embla__slide__text">
                 <div className="text-center">
-                  <p className="text-lg font-semibold">
+                  <p className="text-lg font-semibold mt-2">
                     {descriptions[index].profil}
                   </p>
-                  <p>
-                    Durée moyenne de la recherche:{" "}
-                    <span className="font-semibold">
-                      {descriptions[index].durée}
-                    </span>
-                  </p>
                   <button
-                    className="inline-block mt-5 py-2 px-4 rounded-l-xl rounded-t-xl bg-[#EF7970] hover:bg-white hover:text-[#EF7970] focus:text-[#EF7970] focus:bg-gray-200 text-gray-50 font-bold leading-loose transition duration-200"
+                    className="inline-block mt-5 py-2 px-4 rounded-l-xl rounded-t-xl bg-[#EF7970] hover:bg-white hover:text-[#EF7970] focus:text-[#EF7970] focus:bg-gray-200 text-gray-50 font-bold leading-loose transition duration-200 cursor-pointer"
                     onClick={() => {
                       setIsModalOpen(true);
                       setDetail(descriptions[index].detail);
@@ -97,7 +113,6 @@ const Carousel = ({
           ))}
         </div>
       </div>
-      ;
     </div>
   );
 };

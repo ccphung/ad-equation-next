@@ -1,3 +1,6 @@
+"use client";
+
+import { XCircleIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import Carousel from "./Carousel";
 
@@ -11,30 +14,29 @@ function FoundProperties() {
 
   return (
     <div className="relative bg-stone-100 p-4">
-      {/* Appliquer le blur uniquement si le modal est ouvert */}
-      <div className={`${isModalOpen ? "blur-md" : ""}`}>
-        <h2 className="text-center text-[1.5em] text-stone-700 mb-6 font-semibold">
-          Biens trouvés pour
-        </h2>
-        <Carousel
-          slides={SLIDES}
-          options={OPTIONS}
-          isModalOpen={isModalOpen}
-          setIsModalOpen={setIsModalOpen}
-          setDetail={setDetail}
-        />
-      </div>
+      <h2 className="text-center text-[1.5em] text-stone-700 mb-6 font-semibold">
+        Biens trouvés pour
+      </h2>
+      <Carousel
+        slides={SLIDES}
+        options={OPTIONS}
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        setDetail={setDetail}
+      />
 
       {isModalOpen && (
-        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg relative">
+        <div className="fixed inset-0 flex justify-center items-center bg-opacity-50 backdrop-blur-md bg-black/30 z-10 max-w-[100vw] ">
+          <div className="bg-white p-6 rounded-lg shadow-lg relative ">
             <h2 className="text-xl font-semibold mb-4">Détails</h2>
-            <p>{detail}</p>
+            <p className="whitespace-pre-line text-gray-700 text-sm">
+              {detail}
+            </p>
             <button
-              className="mt-4 px-4 py-2 bg-red-500 text-white rounded"
+              className="mt-4 px-4 py-2 absolute text-[#EF7970] rounded cursor-pointer top-[-10px] right-0 hover:text-[#ef797095]"
               onClick={() => setIsModalOpen(false)}
             >
-              Fermer
+              <XCircleIcon className="w-10" />
             </button>
           </div>
         </div>

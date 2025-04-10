@@ -1,11 +1,15 @@
+import Image from "next/image";
+
 function ListItem({ text }) {
   return (
-    <div className="m-2">
+    <div className="mt-4">
       <li className="flex align-middle">
-        <img
-          className="w-4 h-4 m-1"
+        <Image
+          className="m-1"
           src="/images/icons/check-mark-circle-icon.svg"
           alt="check mark"
+          width={20}
+          height={20}
         />
         <span>{text}</span>
       </li>
