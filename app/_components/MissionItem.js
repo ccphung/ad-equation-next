@@ -135,7 +135,7 @@ function MissionItem({
           {/* Work Modal */}
           {isWorkModalOpen && (
             <div className="text-center">
-              <p className="whitespace-pre-line">{work.desc}</p>
+              <p className="whitespace-pre-line text-justify">{work.desc}</p>
             </div>
           )}
 
