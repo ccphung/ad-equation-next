@@ -123,7 +123,7 @@ function MissionItem({
                     <p className="font-semibold text-lg text-center">
                       {item.title}
                     </p>
-                    <p className="text-sm text-gray-600 whitespace-pre-line">
+                    <p className="text-sm text-gray-600 whitespace-pre-line text-justify">
                       {item.content}
                     </p>
                   </div>
