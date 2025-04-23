@@ -35,7 +35,7 @@ const questions = [
 export default function Page() {
   return (
     <div className="flex justify-center m-5">
-      <div className=" lg:w-[50%] sm:w-[80%] flex flex-col justify-start">
+      <div className=" lg:w-[50%] sm:w-[80%] flex flex-col justify-start xl:mb-[80px]">
         <h1 className=" text-[2.5em] text-stone-800 font-bold mb-5">
           Questions fréquentes
         </h1>
