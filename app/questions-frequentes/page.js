@@ -3,32 +3,85 @@ import QuestionItem from "@/app/_components/QuetionItem";
 const questions = [
   {
     question: "Qu’est-ce qu’un chasseur immobilier ?",
-    reponse:
-      "Un chasseur immobilier est un professionnel de l'immobilier qui agit en tant que mandataire de l'acheteur ou du locataire (et non du vendeur ou propriétaire, contrairement à un agent immobilier classique). Son rôle principal est de rechercher, sélectionner et négocier des biens immobiliers pour le compte de ses clients, en fonction de leurs besoins, de leurs préférences et de leur budget.",
+    reponse: (
+      <p>
+        Un <strong>chasseur immobilier</strong> est un professionnel de
+        l&apos;immobilier qui agit en tant que{" "}
+        <strong>mandataire de l&apos;acheteur ou du locataire</strong> (et non
+        du vendeur ou propriétaire, contrairement à un agent immobilier
+        classique). Son rôle principal est de rechercher, sélectionner et
+        négocier des biens immobiliers pour le compte de ses clients, en
+        fonction de leurs <strong>besoins</strong>, de leurs{" "}
+        <strong>préférences</strong> et de leur <strong>budget</strong>.
+      </p>
+    ),
   },
   {
     question: "Quelle est la différence avec un agent immobilier classique ?",
-    reponse:
-      "L’agent immobilier représente le vendeur, mais doit veiller à la fois aux intérêts du vendeur et de l’acheteur. Le chasseur immobilier représente uniquement l’acheteur. En toute impartialité, il le conseille et l’accompagne jusqu’à la signature de l’acte authentique ou du bail. Il veille sur les intérêts de son client acheteur ou locataire",
+    reponse: (
+      <>
+        L&apos;agent immobilier représente le vendeur, mais doit veiller à la
+        fois aux intérêts du vendeur et de l&apos;acheteur.{" "}
+        <strong>Le chasseur immobilier </strong>représente{" "}
+        <strong>uniquement l&apos;acheteur</strong>. En toute impartialité, il
+        le conseille et l&apos;accompagne jusqu&apos;à la signature de
+        l&apos;acte authentique ou du bail. Il{" "}
+        <strong>veille sur les intérêts de son client</strong> acheteur ou
+        locataire
+      </>
+    ),
   },
   {
     question: "A qui s’adressent les services du chasseur immobilier ?",
-    reponse: `– Aux personnes qui désirent être accompagnées d’un expert afin d’éviter les erreurs dues à la méconnaissance du marché et/ou á la barrière de la langue \n– Aux personnes qui n’ont pas beaucoup de temps à consacrer à leur recherche\n– Aux personnes qui veulent maximiser leurs chances sur un marché immobilier tendu`,
+    reponse: (
+      <ul>
+        <li>
+          - Aux personnes qui{" "}
+          <strong>désirent être accompagnées d’un expert</strong> afin d’éviter
+          les erreurs dues à la méconnaissance du marché et/ou á la barrière de
+          la langue
+        </li>
+        <li>
+          - Aux personnes qui n’ont <strong>pas beaucoup de temps</strong> à
+          consacrer à leur recherche
+        </li>
+        <li>
+          - Aux personnes qui veulent <strong>maximiser leurs chances</strong>{" "}
+          sur un marché immobilier tendu
+        </li>
+      </ul>
+    ),
   },
   {
     question: "Quel est le coût de votre service ?",
-    reponse:
-      "Le tarif est forfaitaire, sans frais d’agence supplémentaires.​ Chaque recherche est unique : le coût dépend de plusieurs critères tels que votre profil (étudiant, salarié avec contrat local ou non…), vos besoins (extérieur, avec animaux…) et le type de contrat recherché (achat ou location, durée du bail…). ",
+    reponse: (
+      <p>
+        Le tarif est <strong>forfaitaire</strong>, sans frais d’agence
+        supplémentaires.​ Chaque recherche est unique : le coût dépend de
+        plusieurs critères tels que votre profil (étudiant, salarié avec contrat
+        local ou non…), vos besoins (extérieur, avec animaux…) et le type de
+        contrat recherché (achat ou location, durée du bail…).
+      </p>
+    ),
   },
   {
     question: "Quelle est la durée d'une recherche ?",
-    reponse:
-      "La durée moyenne d’une recherche dépend du profil, des critères, mais surtout de l’état d’avancement de votre projet.",
+    reponse: (
+      <p>
+        La durée moyenne d’une recherche dépend du profil, des critères, mais
+        surtout de l’état d’avancement de votre projet.
+      </p>
+    ),
   },
   {
     question: "Que se passe-t-il si vous ne trouvez pas ?",
-    reponse:
-      " Le premier contact me permet de déterminer mon engagement. Si j’accepte la mission, c’est avec la conviction que je pourrai aboutir : mon engagement est réel, et toujours orienté résultat.",
+    reponse: (
+      <p>
+        Le premier contact me permet de déterminer mon engagement. Si j’accepte
+        la mission, c’est avec la conviction que je pourrai aboutir : mon
+        engagement est réel, et toujours orienté résultat.
+      </p>
+    ),
   },
 ];
 

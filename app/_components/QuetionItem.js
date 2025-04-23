@@ -19,7 +19,9 @@ function QuetionItem({ question, response }) {
       </div>
 
       {showResponse && (
-        <p className="text-stone-600 whitespace-pre-line">{response}</p>
+        <div className="text-stone-600 whitespace-pre-line mb-2">
+          {response}
+        </div>
       )}
     </div>
   );
