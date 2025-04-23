@@ -23,3 +23,13 @@ body {
     --foreground: #ededed;
   }
 }
+
+@media (max-width: 640px) {
+  .embla__slide__img {
+    width: 100%;
+    min-width: 100%;
+  }
+  .embla__container {
+    margin-left: 2px;
+  }
+}

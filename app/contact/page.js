@@ -18,18 +18,18 @@ export default function Page() {
 
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <span className="text-indigo-400  flex justify-center items-center">
+                <span className="text-[#5F66AC]  flex justify-center items-center">
                   <PhoneIcon className="w-5 m-1" /> +33 6 61 93 58 98
                 </span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="text-indigo-400  flex justify-center items-center">
+                <span className="text-[#5F66AC]   flex justify-center items-center">
                   <PhoneIcon className="w-5 m-1" />
                   +351 xx xx xx xx
                 </span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="text-indigo-400  flex justify-center items-center">
+                <span className="text-[#5F66AC]   flex justify-center items-center">
                   <EnvelopeIcon className="w-5 m-1 " />{" "}
                   adeline.porto.immo@gmail.com
                 </span>

@@ -10,7 +10,7 @@ export const metadata = {
   },
 
   description:
-    "Nous cherchons, vous trouvez... sans effort ! A vos côtés pour défendre vos intérêts et vous assere le meilleur choix, en toute sérénité.",
+    "Nous cherchons, vous trouvez... sans effort ! A vos côtés pour défendre vos intérêts et vous assure le meilleur choix, en toute sérénité.",
 };
 
 export default function RootLayout({ children }) {
