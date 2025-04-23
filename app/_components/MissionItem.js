@@ -19,10 +19,10 @@ function MissionItem({
     title: "Services proposés",
     desc: [
       {
-        icon: <CheckCircleIcon className="w-8 h-8 text-[#EF7970]" />, // Agrandir les icônes pour un meilleur impact visuel
-        title: "Écouter les besoins du client",
+        icon: <CheckCircleIcon className="w-8 h-8 text-[#EF7970]" />,
+        title: "Écouter des besoins",
         content:
-          "Je commence toujours par une discussion approfondie avec le prospect pour comprendre exactement ce qu'il recherche (type de bien, emplacement, budget, etc.).",
+          " Je commence toujours par une discussion approfondie pour comprendre votre besoin (type de bien, emplacement, budget, style…).",
       },
       {
         icon: <UserIcon className="w-8 h-8 text-[#EF7970]" />,
@@ -60,7 +60,43 @@ function MissionItem({
   const work = {
     img: "2.jpg",
     title: "Mon métier",
-    desc: "Un chasseur immobilier est un professionnel de l'immobilier qui agit en tant que mandataire de l'acheteur ou du locataire (et non du vendeur ou propriétaire, contrairement à un agent immobilier classique). Son rôle principal est de rechercher, sélectionner et négocier des biens immobiliers pour le compte de ses clients, en toute impartialité, en fonction de leurs besoins, de leurs préférences et de leur budget. \nRémunéré par l’acheteur ou le locataire, il est un « intermédiaire de confiance » qui facilite la recherche d’un bien, tout en offrant une expertise et une aide dans les négociations et les démarches administratives.",
+    desc: (
+      <>
+        <p>
+          Un{" "}
+          <span className="font-semibold text-[#EF7970]">
+            chasseur immobilier
+          </span>{" "}
+          est un professionnel de l&apos;immobilier qui agit en tant que{" "}
+          <span className="text-[#5F66AC] font-semibold">
+            mandataire de l&apos;acheteur ou du locataire
+          </span>{" "}
+          (et non du vendeur ou propriétaire, contrairement à un agent
+          immobilier classique). Son rôle principal est de{" "}
+          <span className="text-[#5F66AC] font-semibold">
+            rechercher, sélectionner
+          </span>{" "}
+          et <span className="text-[#5F66AC] font-semibold">négocier </span> des
+          biens immobiliers{" "}
+          <span className="text-[#5F66AC] font-semibold">
+            pour le compte de ses clients
+          </span>
+          , en toute impartialité, en fonction de leurs besoins, de leurs
+          préférences et de leur budget.
+        </p>
+
+        <p>
+          Rémunéré par l&apos;acheteur ou le locataire, il est un
+          <span className="text-[#5F66AC] font-semibold">
+            {" "}
+            « intermédiaire de confiance »
+          </span>{" "}
+          qui facilite la recherche d&apos;un bien, tout en offrant une
+          expertise et une aide dans les négociations et les démarches
+          administratives.
+        </p>
+      </>
+    ),
   };
 
   const references = {
@@ -123,9 +159,9 @@ function MissionItem({
                     <p className="font-semibold text-lg text-center">
                       {item.title}
                     </p>
-                    <p className="text-sm text-gray-600 whitespace-pre-line text-justify">
+                    <div className="text-sm text-gray-600 whitespace-pre-line text-justify">
                       {item.content}
-                    </p>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -135,7 +171,9 @@ function MissionItem({
           {/* Work Modal */}
           {isWorkModalOpen && (
             <div className="text-center">
-              <p className="whitespace-pre-line text-justify">{work.desc}</p>
+              <div className="whitespace-pre-line text-justify">
+                {work.desc}
+              </div>
             </div>
           )}
 

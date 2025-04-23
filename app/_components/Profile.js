@@ -13,7 +13,7 @@ function Profile() {
             height={200}
           />
           <p className="text-[1.5em] italic mx-2">
-            &ldquo;Votre projet, mon engagement, l&apos;efficacité au service de
+            &ldquo;Votre projet, mon engagement; l&apos;efficacité au service de
             vos rêves.&rdquo;
           </p>
         </div>

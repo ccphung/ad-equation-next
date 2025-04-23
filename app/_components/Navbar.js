@@ -45,7 +45,7 @@ function Navbar() {
               href={item.href}
               className={
                 pathname === item.href
-                  ? "text-sm font-semibold text-indigo-400 border-b-2 border-indigo-400 px-3 py-2"
+                  ? "text-sm font-semibold text-[#5F66AC] border-b-1 border-[#5F66AC] px-3 py-2"
                   : "text-sm font-semibold text-gray-900 rounded-lg px-3 py-2 hover:bg-gray-50"
               }
             >
@@ -57,9 +57,7 @@ function Navbar() {
           <Link
             href="/contact"
             className={
-              pathname === "/contact"
-                ? "text-base font-semibold bg-indigo-400 text-white px-3 py-2 transition-colors duration-300"
-                : "text-base font-semibold bg-gray-900 text-white px-3 py-2 hover:bg-gray-500 transition-colors duration-300"
+              "font-semibold bg-[#EF786F] text-white px-3 py-2 hover:bg-gray-500 transition-colors duration-300"
             }
           >
             Contact
@@ -95,7 +93,7 @@ function Navbar() {
                     onClick={() => setMobileMenuOpen(false)}
                     className={
                       pathname === item.href
-                        ? "text-base font-semibold text-indigo-400 hover:bg-gray-50 block rounded-lg px-3 py-2"
+                        ? "text-base font-semibold text-[#5F66AC] hover:bg-gray-50 block rounded-lg px-3 py-2"
                         : "text-base font-semibold text-gray-900 hover:bg-gray-50 block rounded-lg px-3 py-2"
                     }
                   >
@@ -109,7 +107,7 @@ function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className={
                     pathname === "/contact"
-                      ? "text-base font-semibold text-indigo-400 hover:bg-gray-50 block rounded-lg px-3 py-2"
+                      ? "text-base font-semibold text-[#5F66AC] hover:bg-gray-50 block rounded-lg px-3 py-2"
                       : "text-base font-semibold text-gray-900 hover:bg-gray-50 block rounded-lg px-3 py-2"
                   }
                 >

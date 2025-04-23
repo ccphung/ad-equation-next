@@ -18,17 +18,17 @@ const questions = [
   {
     question: "Quel est le coût de votre service ?",
     reponse:
-      "Chaque recherche est unique, le coût dépend de la difficulté de la recherche.",
+      "Le tarif est forfaitaire, sans frais d’agence supplémentaires.​ Chaque recherche est unique : le coût dépend de plusieurs critères tels que votre profil (étudiant, salarié avec contrat local ou non…), vos besoins (extérieur, avec animaux…) et le type de contrat recherché (achat ou location, durée du bail…). ",
   },
   {
     question: "Quelle est la durée d'une recherche ?",
     reponse:
-      "La durée moyenne d une recherche dépend du profil, des critères, de l’état d’avancement de votre projet.",
+      "La durée moyenne d’une recherche dépend du profil, des critères, mais surtout de l’état d’avancement de votre projet.",
   },
   {
     question: "Que se passe-t-il si vous ne trouvez pas ?",
     reponse:
-      "Le premier contact me permet de déterminer mon engagement. Si j'accepte la mission, c'est que je sais que je vais trouver",
+      " Le premier contact me permet de déterminer mon engagement. Si j’accepte la mission, c’est avec la conviction que je pourrai aboutir : mon engagement est réel, et toujours orienté résultat.",
   },
 ];
 

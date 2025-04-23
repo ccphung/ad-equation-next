@@ -9,14 +9,14 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-indigo-300 text-white py-6 ">
+    <footer className="bg-[#5F66AC] text-white py-6 ">
       <div className="container mx-auto px-4 xl:grid xl:grid-cols-3 flex flex-col gap-4 items-center">
-        <div className="relative rounded-full h-24 w-24 z-[1]">
+        <div className="relative rounded-full h-30 w-30 z-[1] bg-white overflow-hidden">
           <Image
-            className="rounded-full border-indigo-100 p-2"
             src="/images/logo/logo.png"
             alt="adeline"
             fill
+            className="object-contain p-2"
           />
         </div>
 
@@ -51,11 +51,11 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="flex flex-col justify-center items-center">
           <p className="font-bold text-xl mb-2 m-1 xl:text-white text-indigo-500">
             Suivez-nous
           </p>
-          <div className="flex space-x-4 mt-2">
+          <div className="flex space-x-4">
             <a
               href="https://instagram.com"
               target="_blank"
@@ -63,14 +63,6 @@ const Footer = () => {
               className="text-white hover:text-[#E1306C]"
             >
               <FontAwesomeIcon icon={faInstagram} className="h-6 w-6" />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-[#1DA1F2]"
-            >
-              <FontAwesomeIcon icon={faTwitter} className="h-6 w-6" />
             </a>
             <a
               href="https://facebook.com"

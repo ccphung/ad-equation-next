@@ -11,7 +11,6 @@ function WhyDelegate() {
           <ListItem text="Gagner du temps" />
           <ListItem text="Sécuriser votre achat immobilier ou location" />
           <ListItem text="Avoir un expert à vos côtés" />
-          <ListItem text="Avoir un expert à vos côtés" />
           <ListItem text="Avoir un accès à un plus grand choix de biens" />
           <ListItem text="Être sûr d'acheter ou louer au juste prix" />
         </ul>

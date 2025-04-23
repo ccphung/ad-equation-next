@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Flag from "./Flag";
 
 function Hero() {
   return (
-    <div className="flex justify-center">
-      <div className="flex justify-center flex-col mt-5 max-w-[1048px] m-4">
+    <div className="flex justify-center items-center">
+      <div className="flex justify-center flex-col max-w-[1048px] m-4 h-[80vh]">
         <div className="flex flex-row justify-center align-middle">
           <div className="max-w-[500px] flex flex-col justify-end mr-2">
             <h1 className="text-center font-serif text-[2em] mb-2">
@@ -16,18 +15,14 @@ function Hero() {
               pour défendre vos intérêts et vous assurer le meilleur choix, en
               toute sérénité.
             </h2>
-            <div className="flex items-end h-50 relative">
+            <div className="flex items-end h-65 relative">
               <Image
                 className=" xl:block object-cover"
                 fill
-                src="/images/hero/hero4.jpg"
+                src="/images/hero/hero1.jpg"
                 alt="porto"
               />
             </div>
-          </div>
-
-          <div className="w-32 sm:w-48 md:w-64 size-96 object-cover hidden xl:block relative">
-            <Image src="/images/hero/hero3.jpg" alt="inside appartment" fill />
           </div>
         </div>
 
