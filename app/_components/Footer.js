@@ -52,9 +52,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center">
-          <p className="font-bold text-xl mb-2 m-1 xl:text-white text-indigo-500">
-            Suivez-nous
-          </p>
+          <p className="font-bold text-xl mb-2 m-1 ">Suivez-nous</p>
           <div className="flex space-x-4">
             <a
               href="https://instagram.com"
