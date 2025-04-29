@@ -1,13 +1,8 @@
 "use client";
-import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
-import {
-  CheckBadgeIcon,
-  EnvelopeIcon,
-  PhoneIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import toast from "react-hot-toast";
 
 export default function Page() {
@@ -17,7 +12,7 @@ export default function Page() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_sphmw6e", "template_9blolas", form.current, {
+      .sendForm("service_p3q9kor", "template_9blolas", form.current, {
         publicKey: "3u_uVySCdC5FtvRQP",
       })
       .then(
