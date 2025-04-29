@@ -1,12 +1,39 @@
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+"use client";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+import {
+  CheckBadgeIcon,
+  EnvelopeIcon,
+  PhoneIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
+import toast from "react-hot-toast";
 
 export default function Page() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_sphmw6e", "template_9blolas", form.current, {
+        publicKey: "3u_uVySCdC5FtvRQP",
+      })
+      .then(
+        () => {
+          toast.success("Message envoyé avec succès !");
+          form.current.reset();
+        },
+        (error) => {
+          toast.error("Une erreur est survenue.");
+        }
+      );
+  };
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Section du contenu principal */}
       <div className="flex justify-center m-5 flex-grow">
         <div className="lg:w-4/5 sm:w-full grid grid-cols-1 lg:grid-cols-2 gap-8 m-5">
-          {/* Section coordonnées */}
           <div className="flex flex-col justify-center p-8 bg-gray-100 rounded-lg shadow-lg">
             <h2 className="text-2xl font-semibold text-[#EF7970] mb-4">
               Contactez-moi
@@ -37,13 +64,12 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Formulaire de contact */}
           <div className="flex flex-col justify-center p-8 bg-white rounded-lg shadow-lg">
             <h2 className="text-2xl font-semibold text-[#EF7970] mb-4">
               Envoyez un message
             </h2>
-            <form className="space-y-6">
-              {/* Prénom, Nom et Téléphone sur la même ligne */}
+
+            <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div className="flex space-x-4">
                 <div className="flex-1">
                   <label
@@ -124,6 +150,7 @@ export default function Page() {
               <div className="flex justify-end">
                 <button
                   type="submit"
+                  value="Send"
                   className="px-6 py-2 bg-[#EF7970] text-white font-semibold rounded-lg shadow-md hover:bg-[#d16b62] focus:outline-none focus:ring-2 focus:ring-[#EF7970] focus:ring-opacity-50"
                 >
                   Envoyer

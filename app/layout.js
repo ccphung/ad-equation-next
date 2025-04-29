@@ -2,6 +2,7 @@ import Navbar from "@/app/_components/Navbar";
 
 import "@/app/_styles/globals.css";
 import Footer from "./_components/Footer";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <body>
         <Navbar />
+        <Toaster position="top-center" />
         {children}
         <Footer />
       </body>
